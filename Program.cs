@@ -1,4 +1,7 @@
-﻿using System;
+﻿// Ejecusion del programa 
+// dotnet run
+
+using System;
 
 namespace CSharpHelloWorld
 {
@@ -76,11 +79,56 @@ namespace CSharpHelloWorld
             }
 
 
-            
-            
+
+            Console.WriteLine("-----------------------------------------");
+            // recorerer estructuras que estna formadas
+            foreach(var m in myArray)
+            {
+                Console.WriteLine(m);
+            }
+
+            foreach(var m in myDictionary)
+            {
+                Console.WriteLine(m);
+            }
+
+
+            //flujos
+
+
+            int va=55;
+            if (va == 5)
+            {
+                Console.WriteLine("Tas bien pedejo");
+            }else if(va == 55){
+                Console.WriteLine("Este chamo se fumo algo");
+            }
+            else
+            {
+                Console.WriteLine("TAs bien carnal hgjghj");
+            }
+            Console.WriteLine("54545454545454545454545");
+            MyFuntion();
+            MyFuntion();
+            MyFuntion();
+            MyFuntionWhithreturntDatos(55,55);
         }
+        static void MyFuntion()
+        {
+            Console.WriteLine("Este es un mesaje de ayuda ");
+        }
+
+
+        static void MyFuntionWhithreturntDatos(int a, int b)
+        {
+            Console.WriteLine(a+b);
+        }
+
+
+
     }
 }
+
 
 
 
